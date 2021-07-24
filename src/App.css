@@ -1,5 +1,6 @@
 .App{
   font-size: 14px;
+  align-items: center;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -9,10 +10,19 @@
 #heart{
   width: auto;
   height: 25px;
+  margin-left: 20px;
+  transition: ease-in-out 300ms;
 }
 #heart:hover{
   cursor: pointer;
   transform: rotate(20deg);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 li {
   height: 20px;
@@ -22,6 +32,11 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+#beer:hover {
+  cursor: pointer;
+  color: red;
 }
 
 .App-header {
